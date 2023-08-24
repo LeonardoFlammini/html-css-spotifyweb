@@ -52,11 +52,24 @@ body {
   filter: none;
 }
 
+.btn {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: inline-block;
+  border: 1px solid white;
+  border-radius: 25px;
+  padding: 5px 30px;
+  color: white;
+}
 main {
   height: calc(100% - 90px);
   width: 100%;
   overflow: hidden;
 }
+
+/* aside */
 
 aside{ 
   width:225px;
@@ -157,6 +170,29 @@ aside .menu {
   padding-right: 5px;
 }
 
+/* cta */
+
+.cta-bar {
+  width: calc(100% - 225px);
+  height: 90px;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  background-color: #141922;
+  opacity: .3;
+}
+
+.cta-bar .container {
+  width: 100%;
+  height: 100%;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.cta-bar .container a {
+  margin-right: 20px;
+}
+
 .content {
   width: calc(100% - 225px);
   height: 100%;
@@ -164,13 +200,6 @@ aside .menu {
   padding-top: 90px;
 }
 
-.cta-bar {
-  width: 100%;
-  height: 90px;
-  position: fixed;
-  top: 0;
-  z-index: 999;
-}
 
 
 footer {
