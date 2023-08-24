@@ -68,7 +68,7 @@ aside{
 
 .aside-top{
   width: 100%;
-  height: calc(100% - 90px);
+  height: calc(100% - 90px - 40px);
 }
 
 .logo {
@@ -142,11 +142,13 @@ aside .menu {
 }
 
 .aside-bottom .download {
+  align-items: center;
  padding-bottom: 5px;
  border-bottom: 1px solid var(--gray);
 }
 
 .aside-bottom .user {
+  align-items: center;
   padding-top: 5px;
 }
 
