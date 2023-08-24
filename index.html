@@ -17,24 +17,54 @@
       <aside class="d-flex debug">
 
         <div class="aside-top debug">
-          <div class="logo debug">Logo</div>
+          <div class="logo d-flex debug">
+            <img src="img/logo.svg" alt="logo">
+          </div>
+          <div class="logo-small">L</div>
           <nav class="menu debug">
-            <ul>
-              <li>Home</li>
-              <li>Cerca</li>
-              <li>Libreria</li>
-            </ul>
+            
+            <div class="home active d-flex">
+              <img class="icon active" src="img/home.svg" alt="home">
+              <span class="text">Home</span>
+            </div>
+
+            <div class="search d-flex">
+              <img class="icon" src="img/search.svg" alt="search">
+              <span class="text">Cerca</span>
+            </div>
+
+            <div class="library d-flex">
+              <img class="icon" src="img/libreria.svg" alt="library">
+              <span class="text">Libreria</span>
+            </div>
+
+
           </nav>
           <div class="playlist debug">
 
             <div class="playlist-top debug">
 
               <div class="title">Playlist</div>
-              <div class="new">crea playlist</div>
+
+              <div class="new d-flex">
+
+                <div class="btn-square d-flex">
+
+                  <i class="fa-solid fa-plus"></i>
+
+                </div>
+                <span class="text">Crea playlist</span>
+              </div>
 
             </div>
             <div class="playlist-bottom debug">
               <ul>
+                <li>Nuova playlist</li>
+                <li>Nuova playlist</li>
+                <li>Nuova playlist</li>
+                <li>Nuova playlist</li>
+                <li>Nuova playlist</li>
+                <li>Nuova playlist</li>
                 <li>Nuova playlist</li>
                 <li>Nuova playlist</li>
                 <li>Nuova playlist</li>
@@ -59,7 +89,11 @@
     </main>
 
 
-    <footer class="debug"></footer>
+    <footer class="d-flex debug">
+      <div class="song debug">Song</div>
+      <div class="player debug">Player</div>
+      <div class="volume debug">Volume</div>
+    </footer>
 
   </div>
 
