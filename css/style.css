@@ -223,6 +223,8 @@ footer {
 }
 
 .song .info {
+  flex-wrap: nowrap;
+  width: 70%;
   height: 50%;
   align-items: center;
   column-gap: 10px;
@@ -231,6 +233,7 @@ footer {
 .song .text {
   height: 100%;
   line-height: 15px; 
+  flex-wrap: nowrap;
   flex-direction: column;
   justify-content: center;
   font-size: 0.8rem;
@@ -251,6 +254,50 @@ footer {
   object-fit: cover;
 }
 
+.song .actions {
+  width: 30%;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--gray);
+
+}
+
 .player{
   width: 50%;
+}
+
+.player .controls,
+.player .bar {
+  width: 100%;
+  height: 50%;
+}
+
+.player .controls {
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+
+/* FIXME: rendere la spaziatura dinamica */
+.player .controls span {
+  margin-right: 25px;
+}
+
+.player .bar-section{
+  text-align: center;
+}
+
+.player .bar-section .time-passed,
+.player .bar-section .time-left {
+  font-size: 0.7rem;
+}
+
+.player .bar-section .bar {
+  display: inline-block;
+  width: 80%;
+  height: 4px;
+  margin: 0 20px;
+  background-color: white;
+  border-radius: 2px;
 }
