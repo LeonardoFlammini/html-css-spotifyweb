@@ -16,11 +16,11 @@ body {
   --aside-padding: 20px;
   --aside-padding-active: 16px;
 }
-
+/* 
 .debug {
-  /* background-color: rgba(0, 0, 0, .1); */
+  background-color: rgba(0, 0, 0, .1);
   border: 1px solid black;
-}
+} */
 
 .d-flex {
   display: flex;
@@ -267,7 +267,7 @@ footer {
 }
 
 .player .controls,
-.player .bar {
+.player .bar-section {
   width: 100%;
   height: 50%;
 }
@@ -293,11 +293,57 @@ footer {
   font-size: 0.7rem;
 }
 
-.player .bar-section .bar {
+.bar {
   display: inline-block;
   width: 80%;
   height: 4px;
   margin: 0 20px;
-  background-color: white;
+  background-color: var(--gray);
   border-radius: 2px;
+}
+
+.volume {
+  width: 250px;
+  justify-content: center;
+  align-items: center;
+}
+
+.volume .volume-controls {
+  width: 45%;
+  justify-content: space-around;
+}
+
+.volume .bar {
+  width: 45%;
+  margin: 0;
+}
+
+/* card container */
+
+.content {
+  background-color: var(--content-bg);
+}
+
+.content .menu {
+  width: 100%;
+  padding: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+}
+
+.content .menu span {
+  padding: 0 10px;
+
+}
+
+.recently-played {
+  width: 100%;
+  color: white;
+}
+
+.recently-played .card-container {
+  width: 100%;
+  flex-wrap: wrap;
 }
