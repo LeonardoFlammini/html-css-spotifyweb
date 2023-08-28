@@ -69,3 +69,26 @@
     display: none;
   }
 }
+
+@media screen and (max-width:1100px){
+
+  .recently-played .card-container .card,
+  .created .card-container .card,
+  .popular-artists .card-container .card {
+    width: calc(100% / 5);
+    min-width: 200px;
+  }
+
+}
+
+
+@media screen and (max-width:768px){
+
+  .recently-played .card-container .card,
+  .created .card-container .card,
+  .popular-artists .card-container .card {
+    width: calc(100% / 3);
+    /* min-width: 200px; */
+  }
+
+}

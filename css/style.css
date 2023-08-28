@@ -238,6 +238,7 @@ aside .menu {
 } */
 
 .content .menu span {
+  color: var(--gray);
   padding: 0 10px;
 
 }
@@ -304,9 +305,6 @@ aside .menu {
   background-color: rgba(0, 0, 0, .3);
 }
 
-.card .image:hover .image-hover {
-  display: flex;
-}
 
 .popular-artists .card .image-hover {
   border-radius: 50%;
@@ -475,14 +473,6 @@ footer {
   display: none;
 }
 
-.bar-section:hover .bar-elapsed {
-  background-color: var(--green);
-}
-
-.bar-section:hover .pointer {
-  display: block;
-}
-
 .volume {
   width: 25%;
   max-width: 250px;
@@ -491,6 +481,7 @@ footer {
 }
 
 .volume .volume-controls {
+  color: var(--gray);
   width: 45%;
   justify-content: space-around;
 }

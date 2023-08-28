@@ -1,0 +1,60 @@
+
+.btn:hover{
+  scale: 1.1;
+}
+
+#play:hover{
+  scale: 1.5;
+  color: var(--green);
+}
+
+.menu-section:hover .icon {
+  filter: contrast(1);
+}
+
+.menu-section:hover .text{
+  color: white;
+}
+
+.playlist-top .new:hover .text {
+  color: white;
+}
+.playlist-top .new:hover .btn-square {
+  background-color: white;
+}
+
+.playlist-bottom li:hover{
+  color: white;
+}
+
+.aside-bottom .download:hover,
+.aside-bottom .name:hover {
+  color: white;
+}
+
+.content .menu span:hover {
+  color: white;
+}
+
+.card .image:hover .image-hover {
+  display: flex;
+}
+
+
+
+.bar-section:hover .bar-elapsed {
+  background-color: var(--green);
+}
+
+.bar-section:hover .pointer {
+  display: block;
+}
+
+.favourite:hover,
+.folder:hover {
+  color: white;
+}
+
+.volume-controls span:hover {
+  color: white;
+}
