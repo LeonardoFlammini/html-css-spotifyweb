@@ -358,7 +358,8 @@ footer {
 }
 
 .song {
-  width: 250px;
+  width: 25%;
+  max-width: 250px;
   align-items: center;
   padding-left: var(--aside-padding);
 }
@@ -472,7 +473,8 @@ footer {
 }
 
 .volume {
-  width: 250px;
+  width: 25%;
+  max-width: 250px;
   justify-content: center;
   align-items: center;
 }
