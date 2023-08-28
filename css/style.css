@@ -26,6 +26,7 @@ body {
 .d-flex {
   display: flex;
   flex-wrap: wrap;
+  /* FIXME: fare classe a parte per il wrap */
 }
 
 .main-wrapper {
@@ -64,6 +65,17 @@ body {
   padding: 5px 30px;
   color: white;
 }
+
+
+.perc20 {
+  width: 20%;
+}
+
+.perc50{
+  width: 50%;
+}
+
+
 main {
   height: calc(100% - 90px);
   width: 100%;
@@ -396,7 +408,7 @@ footer {
 }
 
 .player .controls,
-.player .bar-section {
+.player .bar-section{
   width: 100%;
   height: 50%;
 }
@@ -405,6 +417,7 @@ footer {
   justify-content: center;
   align-items: center;
   font-size: 1.5rem;
+  padding: 10px;
 }
 
 
@@ -414,7 +427,9 @@ footer {
 }
 
 .player .bar-section{
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .player .bar-section .time-passed,
@@ -432,15 +447,12 @@ footer {
 }
 
 .bar-elapsed {
+  display: flex;
   height: 100%;
   align-items: center;
   justify-content: flex-end;
   background-color: white;
   border-radius: 2px;
-}
-
-.perc20 {
-  width: 20%;
 }
 
 .pointer {
@@ -470,7 +482,12 @@ footer {
   justify-content: space-around;
 }
 
-.volume .bar {
+.volume .bar-section {
+  display: flex;
+  align-items: center;
   width: 45%;
+}
+
+.volume .bar-section .bar {
   margin: 0;
 }
