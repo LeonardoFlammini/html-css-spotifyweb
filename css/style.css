@@ -338,23 +338,31 @@ footer {
 
 }
 
-.recently-played {
+.recently-played,
+.created {
   width: 100%;
   color: white;
 }
 
-.recently-played .title {
+.recently-played .title,
+.created .title {
   font-size: 1.2rem;
   font-weight: bold;
   padding: 10px;
 }
 
-.recently-played .card-container {
+.created .sub-title {
+  padding: 0px 10px 10px 10px;
+}
+
+.recently-played .card-container,
+.created .card-container  {
   width: 100%;
   flex-wrap: wrap;
 }
 
-.recently-played .card-container .card {
+.recently-played .card-container .card,
+.created .card-container .card {
   width: calc(100% / 6);
   /* TODO: min width */
   flex-direction: column;
@@ -378,7 +386,8 @@ footer {
 
 }
 
-.card .author {
+.card .author,
+.created .sub-title {
   color: var(--gray);
   font-size: .8rem;
   font-weight: 600;
