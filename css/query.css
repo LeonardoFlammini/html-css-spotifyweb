@@ -34,14 +34,21 @@
     width: calc(100% - 45px);
   }
 
+  .recently-played .card-container .card,
+  .created .card-container .card,
+  .popular-artists .card-container .card {
+    width: calc(100% / 2);
+    min-width: 200px;
+  }
+
 
   .menu .text {
     display: none;
   }
 
   .home,
-.search,
-.library{
+  .search,
+  .library{
   padding-left: var(--xs-aside-padding);
 }
   
