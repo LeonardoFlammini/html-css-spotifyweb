@@ -363,6 +363,7 @@ footer {
 .popular-artists .card-container  {
   width: 100%;
   flex-wrap: wrap;
+  gap: 0;
 }
 
 .recently-played .card-container .card,
@@ -372,7 +373,7 @@ footer {
   /* TODO: min width */
   flex-direction: column;
   align-items: center;
-  padding: 10px;
+  padding: 10px 0;
 }
 
 .card .image {
