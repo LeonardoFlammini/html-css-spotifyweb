@@ -431,6 +431,34 @@ footer {
   border-radius: 2px;
 }
 
+.bar-elapsed {
+  height: 100%;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: white;
+  border-radius: 2px;
+}
+
+.perc20 {
+  width: 20%;
+}
+
+.pointer {
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  border-radius: 50%;
+  display: none;
+}
+
+.bar-section:hover .bar-elapsed {
+  background-color: var(--green);
+}
+
+.bar-section:hover .pointer {
+  display: block;
+}
+
 .volume {
   width: 250px;
   justify-content: center;
